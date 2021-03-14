@@ -47,6 +47,17 @@ public class CacheConfiguration {
             createCache(cm, com.zaphrox.myapp.domain.User.class.getName());
             createCache(cm, com.zaphrox.myapp.domain.Authority.class.getName());
             createCache(cm, com.zaphrox.myapp.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.zaphrox.myapp.domain.PriceList.class.getName());
+            createCache(cm, com.zaphrox.myapp.domain.PriceList.class.getName() + ".conditions");
+            createCache(cm, com.zaphrox.myapp.domain.PriceList.class.getName() + ".deductions");
+            createCache(cm, com.zaphrox.myapp.domain.PriceList.class.getName() + ".partSales");
+            createCache(cm, com.zaphrox.myapp.domain.PriceList.class.getName() + ".prices");
+            createCache(cm, com.zaphrox.myapp.domain.Deduction.class.getName());
+            createCache(cm, com.zaphrox.myapp.domain.PartSale.class.getName());
+            createCache(cm, com.zaphrox.myapp.domain.ConditionDefinition.class.getName());
+            createCache(cm, com.zaphrox.myapp.domain.Price.class.getName());
+            createCache(cm, com.zaphrox.myapp.domain.Customer.class.getName());
+            createCache(cm, com.zaphrox.myapp.domain.Customer.class.getName() + ".priceLists");
             // jhipster-needle-ehcache-add-entry
         };
     }
